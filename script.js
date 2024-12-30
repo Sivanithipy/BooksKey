@@ -14,3 +14,20 @@ cancelpopup.addEventListener("click",function(){
   popupoverlay.style.display="none"
   popupbox.style.display="none"
 })
+
+var container =document.getElementById(".container")
+var addbook=document.getElementById("add-book")
+var booktitleinput=document.getElementById("book-title-input")
+var bookauthorinput=document.getElementById("book-author-input")
+var bookdescription=document.getElementById("book-description-input")
+
+addbook.addEventListener("click",function(event){
+  event.preventDefault()
+  var div=document.createElement("div")
+  div.setAttribute("class","book-container")
+  div.innerHTML=`<h1>${booktitleinput.value}</h1>`
+  container.append(div)
+  popupoverlay.style.display="none"
+  popupbox.style.display="none"
+}
+)

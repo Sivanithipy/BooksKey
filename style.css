@@ -21,6 +21,9 @@ body{
   border-radius: 10px;
   margin:30px;
   color: white;
+  display: inline-block;
+  vertical-align: top;
+
 }
 .book-container h3{
  color: palevioletred;
