@@ -55,18 +55,19 @@ body{
   top:0;
   left:0;
   z-index: 1;
+  display: none;
 }
 
 .popup-box{
   background-color: palevioletred;
   width: 40%;
   padding: 40px;
-  height: 50px;
   border-radius: 10px;
   position: absolute;
   top:20%;
   left:20%;
   z-index: 2;
+  display: none;
 }
 
 .popup-box input{
@@ -89,6 +90,14 @@ body{
   border: solid black 2px;
 }
 
+.popup-box input::placeholder{
+  color:black;
+}
+
+.popup-box textarea::placeholder{
+  color: black;
+}
+
 .popup-box button{
   padding-left:20px;
   padding-right: 20px;
@@ -100,6 +109,13 @@ body{
   margin:5px;
 }
 
+.popup-box textarea:focus{
+  outline:none;
+}
+
+.popup-box input:focus{
+  outline: none;
+}
 
 
 
